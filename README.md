@@ -42,7 +42,7 @@ Dự án thuộc bài tập cá nhân Chương 1 môn Phát triển ứng dụng
 - **Thay đổi và giải pháp thực hiện:** 
   1. Chuyển đổi hoàn toàn từ danh sách dọc đơn điệu sang hệ thống lưới thẻ ngành hàng hiện đại, bổ sung icon lớn và bo góc mềm mại.
   2. Bổ sung thông tin số lượng sản phẩm ước tính và các tag khuyến mãi màu đỏ/hồng nổi bật (`.category-tag`) giúp người dùng nắm bắt nhanh các cơ hội giảm giá.
-  3. "Bổ sung thanh tab lọc nhanh (.category-tabs) với thuộc tính overflow-x: auto kết hợp các nút bấm .tab-btn có white-space: nowrap cho phép cuộn ngang dễ dàng trên màn hình cảm ứng di động.
+3. "Bổ sung thanh tab lọc nhanh (.category-tabs) với thuộc tính overflow-x: auto kết hợp các nút bấm .tab-btn có white-space: nowrap cho phép cuộn ngang dễ dàng trên màn hình cảm ứng di động.
   4. Sử dụng `@media (max-width: 576px)` để tự động chuyển layout lưới về 1 cột trên điện thoại, đảm bảo các thẻ danh mục hiển thị to, rõ, dễ bấm.
 
 ## 7. Hỗ trợ từ AI
