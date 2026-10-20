@@ -1,7 +1,7 @@
 # AI Usage Log
 
 ## 1. Công cụ AI
-- **Tên công cụ:** Google Gemini (hoặc ChatGPT).
+- **Tên công cụ:** Google Gemini.
 - **Môi trường sử dụng:** Web browser, kết hợp môi trường lập trình Visual Studio Code[cite: 418].
 
 ## 2. Mục đích sử dụng
