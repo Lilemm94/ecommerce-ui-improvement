@@ -1,4 +1,4 @@
-/* Reset css cơ bản */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,26 +18,183 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
-.page-header {
-  background-color: #0b74e5;
-  color: #ffffff;
-  padding: 28px 0;
-  text-align: center;
+/* HEADER SECTION */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 24px;
 }
 
-.page-header h1 {
+.top-banner {
+  background-color: #ffe885;
+  color: #27272a;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.85rem;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo {
   font-size: 1.8rem;
-  margin-bottom: 8px;
+  font-weight: 900;
+  color: #0b74e5;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.brand-slogan {
+  font-size: 0.75rem;
+  color: #003b8e;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  border: 1px solid #0b74e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.btn-search {
+  background-color: #0b74e5;
+  color: #ffffff;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-search:hover {
+  background-color: #0958b5;
+}
+
+.user-navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #555555;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #0b74e5;
+  background-color: #f0f8ff;
+}
+
+.cart-item {
+  position: relative;
+}
+
+.cart-badge {
+  background-color: #ff424e;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.header-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 0.85rem;
+  gap: 16px;
+}
+
+.quick-keywords {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.quick-keywords a {
+  text-decoration: none;
+  color: #787878;
+}
+
+.quick-keywords a:hover {
+  color: #0b74e5;
+}
+
+.delivery-location {
+  color: #38380d;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.commitments-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  border-top: 1px solid #f2f2f2;
+  font-size: 0.8rem;
+  color: #555555;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.commit-title {
+  font-weight: bold;
+  color: #27272a;
+}
+
+/* MAIN SECTION */
+.page-title-banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-title-banner h1 {
+  font-size: 1.8rem;
+  color: #27272a;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   font-size: 0.95rem;
-  opacity: 0.9;
+  color: #787878;
 }
 
-/* Thanh tab bộ lọc nhanh */
 .category-tabs {
   display: flex;
   gap: 10px;
@@ -66,7 +223,6 @@ body {
   border-color: #0b74e5;
 }
 
-/* Lưới danh mục */
 .category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,95 +230,97 @@ body {
   margin-bottom: 40px;
 }
 
-/* Thẻ ngành hàng */
 .category-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  border: 1px solid #ececec;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(11, 116, 229, 0.12);
-  border-color: #0b74e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Icon ngành hàng */
+.category-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .category-icon-wrapper {
-  width: 56px;
-  height: 56px;
-  background-color: #eaf3ff;
-  border-radius: 12px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  font-size: 1.5rem;
+  flex-shrink: 0;
 }
 
-.category-icon {
-  font-size: 1.8rem;
-}
-
-/* Thông tin ngành hàng */
 .category-info {
-  flex-grow: 1;
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
 }
 
 .category-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #27272a;
-  margin-bottom: 6px;
 }
 
 .category-meta {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #787878;
-  margin-bottom: 8px;
 }
 
 .category-tag {
   display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
   background-color: #fff1f0;
   color: #ff424e;
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 4px;
-  border: 1px solid #ffccc7;
+  margin-top: 4px;
 }
 
-/* Nút liên kết */
 .category-link {
   color: #0b74e5;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  margin-top: auto;
-  transition: gap 0.2s ease;
+  align-self: flex-start;
 }
 
 .category-link:hover {
   text-decoration: underline;
 }
 
-/* Footer */
 .page-footer {
   text-align: center;
   padding: 24px 0;
   color: #777777;
   border-top: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
-
-/* Responsive */
+/* Bổ sung trạng thái focus-visible hỗ trợ điều hướng bằng bàn phím (Phím Tab) */
+.btn-search:focus-visible,
+.tab-btn:focus-visible,
+.nav-item:focus-visible,
+.category-link:focus-visible {
+  outline: 3px solid #f59e0b;          /* Viền nổi bật màu cam/vàng khi bấm phím Tab */
+  outline-offset: 2px;                 /* Tạo khoảng hở giữa viền focus và nút */
+}
 @media (max-width: 992px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -170,16 +328,17 @@ body {
 }
 
 @media (max-width: 576px) {
+  .header-main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .user-navigation {
+    justify-content: space-around;
+  }
+
   .category-grid {
     grid-template-columns: 1fr;
     gap: 15px;
-  }
-
-  .page-header h1 {
-    font-size: 1.4rem;
-  }
-
-  .category-card {
-    padding: 16px;
   }
 }

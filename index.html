@@ -3,21 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cải tiến Danh mục Sản phẩm TMĐT</title>
+  <title>Cải tiến Giao diện TMĐT - Tiki</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="page-header">
-    <div class="container">
-      <h1>Khám Phá Danh Mục Ngành Hàng</h1>
-      <p class="subtitle">Phiên bản cải tiến dạng lưới trực quan, phân nhóm bộ lọc nhanh và tối ưu trên di động</p>
+
+  <!-- 1. Header chính & Menu điều hướng -->
+  <header class="site-header">
+    <div class="top-banner">
+      <p>Freeship đơn từ 45k, giảm nhiều hơn cùng <strong>FREESHIP XTRA</strong></p>
+    </div>
+
+    <div class="header-main container">
+      <a href="index.html" class="logo-link" aria-label="Trang chủ Tiki">
+        <span class="brand-logo">TIKI</span>
+        <span class="brand-slogan">Tốt & Nhanh</span>
+      </a>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Gạo ST25 25k/kg bao thật..." aria-label="Tìm kiếm sản phẩm">
+        <button type="button" class="btn-search">Tìm kiếm</button>
+      </div>
+
+      <nav class="user-navigation" aria-label="Điều hướng người dùng">
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">🏠</span> Trang chủ
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">👑</span> Tiki VIP
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">👤</span> Tài khoản
+        </a>
+        <a href="#" class="nav-item cart-item" aria-label="Giỏ hàng có 0 sản phẩm">
+          <span class="nav-icon">🛒</span>
+          <span class="cart-badge">0</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="header-sub container">
+      <ul class="quick-keywords">
+        <li><a href="#">điện gia dụng</a></li>
+        <li><a href="#">xe cộ</a></li>
+        <li><a href="#">mẹ & bé</a></li>
+        <li><a href="#">khỏe đẹp</a></li>
+        <li><a href="#">nhà cửa</a></li>
+        <li><a href="#">sách</a></li>
+        <li><a href="#">thể thao</a></li>
+      </ul>
+      <div class="delivery-location">
+        <span>📍 Giao đến: <u>Q. 1, P. Bến Nghé, Hồ Chí Minh</u></span>
+      </div>
+    </div>
+
+    <div class="commitments-bar container">
+      <span class="commit-title">Cam kết</span>
+      <span class="commit-item">✔️ 100% hàng thật</span>
+      <span class="commit-item">🚚 Freeship mọi đơn</span>
+      <span class="commit-item">🔄 Hoàn 200% nếu hàng giả</span>
+      <span class="commit-item">📦 30 ngày đổi trả</span>
+      <span class="commit-item">⚡ Giao nhanh 2h</span>
+      <span class="commit-item">🏷️ Giá siêu rẻ</span>
     </div>
   </header>
 
-  <!-- Nội dung chính -->
+  <!-- 2. Nội dung chính -->
   <main class="container">
-    <!-- Bộ lọc tab nhanh -->
+    <section class="page-title-banner">
+      <h1>Khám Phá Danh Mục Ngành Hàng</h1>
+      <p class="subtitle">Phiên bản cải tiến dạng lưới trực quan, phân nhóm bộ lọc nhanh và tối ưu trên di động</p>
+    </section>
+
     <nav class="category-tabs" aria-label="Bộ lọc ngành hàng">
       <button type="button" class="tab-btn active">Tất cả ngành hàng</button>
       <button type="button" class="tab-btn">Thiết bị công nghệ</button>
@@ -26,84 +83,95 @@
       <button type="button" class="tab-btn">Sách & Học tập</button>
     </nav>
 
-    <!-- Lưới danh mục sản phẩm -->
     <section class="category-section">
       <div class="category-grid">
 
         <!-- Ngành hàng 1 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">📱</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Điện Thoại & Máy Tính Bảng</h2>
-            <p class="category-meta">Hơn 12.000+ sản phẩm</p>
-            <span class="category-tag">Flash Sale đến 45%</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">📱</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Điện Thoại & Máy Tính Bảng</h2>
+              <p class="category-meta">Hơn 12.000+ sản phẩm</p>
+              <span class="category-tag">Flash Sale đến 45%</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Điện Thoại & Máy Tính Bảng">Khám phá ngay &rarr;</a>
         </article>
 
         <!-- Ngành hàng 2 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">🎧</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Thiết Bị Số & Phụ Kiện</h2>
-            <p class="category-meta">Hơn 8.500+ sản phẩm</p>
-            <span class="category-tag">Chính hãng 100%</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">🎧</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Thiết Bị Số & Phụ Kiện</h2>
+              <p class="category-meta">Hơn 8.500+ sản phẩm</p>
+              <span class="category-tag">Chính hãng 100%</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Thiết Bị Số & Phụ Kiện">Khám phá ngay &rarr;</a>
         </article>
 
         <!-- Ngành hàng 3 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">📚</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Nhà Sách Tiki & Văn Phòng Phẩm</h2>
-            <p class="category-meta">Hơn 25.000+ tựa sách</p>
-            <span class="category-tag">Đồng giá từ 49k</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">📚</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Nhà Sách Tiki & Văn Phòng Phẩm</h2>
+              <p class="category-meta">Hơn 25.000+ tựa sách</p>
+              <span class="category-tag">Đồng giá từ 49k</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Nhà Sách Tiki">Khám phá ngay &rarr;</a>
         </article>
 
         <!-- Ngành hàng 4 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">💄</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Làm Đẹp & Chăm Sóc Sức Khỏe</h2>
-            <p class="category-meta">Hơn 15.000+ sản phẩm</p>
-            <span class="category-tag">Deal hot mua 1 tặng 1</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">💄</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Làm Đẹp & Chăm Sóc Sức Khỏe</h2>
+              <p class="category-meta">Hơn 15.000+ sản phẩm</p>
+              <span class="category-tag">Deal hot mua 1 tặng 1</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Làm Đẹp & Sức Khỏe">Khám phá ngay &rarr;</a>
         </article>
 
         <!-- Ngành hàng 5 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">🍳</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Điện Gia Dụng & Bếp</h2>
-            <p class="category-meta">Hơn 6.200+ sản phẩm</p>
-            <span class="category-tag">Bảo hành 24 tháng</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">🍳</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Điện Gia Dụng & Bếp</h2>
+              <p class="category-meta">Hơn 6.200+ sản phẩm</p>
+              <span class="category-tag">Bảo hành 24 tháng</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Điện Gia Dụng">Khám phá ngay &rarr;</a>
         </article>
 
         <!-- Ngành hàng 6 -->
         <article class="category-card">
-          <div class="category-icon-wrapper">
-            <span class="category-icon">🛋️</span>
-          </div>
-          <div class="category-info">
-            <h2 class="category-title">Nhà Cửa & Đời Sống</h2>
-            <p class="category-meta">Hơn 18.000+ sản phẩm</p>
-            <span class="category-tag">Freeship tận nhà</span>
+          <div class="category-card-top">
+            <div class="category-icon-wrapper">
+              <span class="category-icon">🛋️</span>
+            </div>
+            <div class="category-info">
+              <h2 class="category-title">Nhà Cửa & Đời Sống</h2>
+              <p class="category-meta">Hơn 18.000+ sản phẩm</p>
+              <span class="category-tag">Freeship tận nhà</span>
+            </div>
           </div>
           <a href="#" class="category-link" aria-label="Xem Nhà Cửa & Đời Sống">Khám phá ngay &rarr;</a>
         </article>
@@ -112,11 +180,12 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- 3. Chân trang -->
   <footer class="page-footer">
     <div class="container">
-      <p><small>&copy; 2026 Bài tập cá nhân Chương 1 - Môn Phát triển Ứng dụng TMĐT</small></p>
+      <p><small>&copy; 2026 Bài tập cá nhân Buổi 2 - Môn Phát triển Ứng dụng TMĐT</small></p>
     </div>
   </footer>
+
 </body>
 </html>
