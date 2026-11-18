@@ -1,155 +1,163 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Labs – Nguyễn Bảo Hân</title>
-  <meta name="description" content="Portfolio bài thực hành JavaScript (Lab 08–10) học phần Phát triển ứng dụng TMĐT, UEH.">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhật Ký Học Tập - Front-End Nâng Cao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ff6584;
+            --light-pink: #fff0f3;
+            --border-pink: #ffb3c1;
+            --text-dark: #2d3748;
+            --bg-gradient: linear-gradient(135deg, #fff5f7 0%, #ffe3e8 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-dark);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(255, 101, 132, 0.15);
+            padding: 35px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-pink);
+        }
+
+        h1 {
+            color: var(--primary-pink);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .content-box {
+            background: var(--light-pink);
+            border-left: 4px solid var(--primary-pink);
+            padding: 15px 20px;
+            border-radius: 0 12px 12px 0;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        .code-snippet {
+            background: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .code-snippet .keyword {
+            color: #569cd6;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background: var(--primary-pink);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 101, 132, 0.3);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-link:hover {
+            background: #e05370;
+            transform: translateY(-2px);
+        }
+
+        .nav-center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- THANH ĐIỀU HƯỚNG -->
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#top"><span class="brand-mark">JS</span> JavaScript Labs</a>
-      <button class="menu-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Mở menu">☰</button>
-      <nav class="site-nav" id="site-nav" aria-label="Điều hướng chính">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#bai-lab">Bài Lab</a>
-        <a href="#kien-thuc">Kiến thức</a>
-        <a href="#tong-ket">Tự đánh giá</a>
-      </nav>
+    <div class="container">
+        <!-- Thẻ thông tin nhật ký học tập -->
+        <div class="card">
+            <h1>🌸 Nhật Ký Học Tập Front-End</h1>
+            
+            <div class="section-title">✨ Hôm nay em học được gì?</div>
+            <div class="content-box">
+                Học cách xây dựng giao diện tương thích đa thiết bị (Responsive Web Design) sử dụng các điểm dừng <strong>@media query</strong> (cho màn hình điện thoại, máy tính bảng) và thiết lập chế độ in ấn với <strong>@media only print</strong>. Ngoài ra còn biết cách sử dụng thẻ <code>&lt;picture&gt;</code> kết hợp với thuộc tính <code>srcset</code> và <code>media</code> để tối ưu hóa hình ảnh linh hoạt theo kích thước màn hình.
+            </div>
+
+            <div class="section-title">💻 Hôm nay em đã làm được gì?</div>
+            <div class="content-box">
+                Hoàn thành bài tập chia bố cục trang web dạng cột trái (Left) và cột phải (Right), tùy chỉnh kích thước ảnh tự động co giãn trong khối, đồng thời thực hành mẹo lập trình JavaScript trên bảng điều khiển Console của trình duyệt (thay đổi hàm kết thúc game Dino và tốc độ chạy của khủng long).
+            </div>
+        </div>
+
+        <!-- Thẻ tổng hợp phần code Dino & Responsive từ ảnh -->
+        <div class="card">
+            <h1>🦖 Tổng Hợp Đoạn Code Thực Hành</h1>
+            
+            <div class="section-title">1. Lệnh Console chỉnh sửa Game Dino (Bất tử & Tốc độ):</div>
+            <div class="code-snippet">
+this.gameOver = () => {};<br>
+this.gameOver = function() {};<br>
+this.setSpeed(10000);
+            </div>
+
+            <div class="section-title" style="margin-top: 20px;">2. Cú pháp Media Query Responsive & Print mẫu:</div>
+            <div class="code-snippet">
+@media only screen and (max-width: 768px) {<br>
+&nbsp;&nbsp;.left, .right { width: 100%; }<br>
+}<br>
+@media only print {<br>
+&nbsp;&nbsp;.left { display: none; }<br>
+}
+            </div>
+        </div>
+
+        <!-- Nút trỏ tới Bai1.html -->
+        <div class="card nav-center">
+            <h3 style="margin-bottom: 15px; color: #4a5568;">Xem lại Bài tập Responsive trực tiếp:</h3>
+            <a href="Bai1.html" class="btn-link">🚀 Mở Bài 1 (Bai1.html)</a>
+        </div>
     </div>
-  </header>
 
-  <main id="top">
-    <!-- 3.1 THÔNG TIN CÁ NHÂN -->
-    <section class="hero">
-      <div class="wrap hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Portfolio thực hành · Chương 4: JavaScript</p>
-          <h1>Nguyễn Bảo Hân</h1>
-          <img src="images/avatar.svg" alt="Ảnh đại diện chữ NH" class="profile-avatar">
-          <ul class="info-list">
-            <li><span>MSSV</span>31241020124</li>
-            <li><span>Lớp học phần</span>Chưa cung cấp</li>
-            <li><span>Học phần</span>Phát triển ứng dụng TMĐT · TS. Nguyễn Mạnh Tuấn</li>
-          </ul>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/Lilemm94" target="_blank" rel="noopener">GitHub cá nhân</a>
-            <a class="btn btn-ghost" href="https://github.com/Lilemm94/ecommerce-ui-improvement" target="_blank" rel="noopener">Repository môn học</a>
-          </div>
-        </div>
-        <dl class="stats" aria-label="Tổng quan kết quả">
-          <div><dt class="stat-num" data-target="1">0</dt><dd>Lab đã có mã nguồn</dd></div>
-          <div><dt class="stat-num" data-target="11">0</dt><dd>Exercise Lab 08</dd></div>
-          <div><dt class="stat-num" data-target="0">0</dt><dd>% triển khai GitHub Pages (chưa xác nhận)</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- 3.2 GIỚI THIỆU -->
-    <section class="section" id="gioi-thieu">
-      <div class="wrap narrow">
-        <h2>Giới thiệu về bài thực hành</h2>
-        <p>Ở các buổi trước, em đã dùng HTML và CSS để dựng giao diện tĩnh cho trang thương mại điện tử. Ba bài Lab trong chương này là bước chuyển từ “trang chỉ để xem” sang “trang có thể tương tác”: trang web biết phản hồi khi người dùng bấm nút, nhập biểu mẫu hay rê chuột lên sản phẩm.</p>
-        <p>JavaScript là ngôn ngữ chạy ngay trong trình duyệt, cho phép đọc và thay đổi nội dung trang thông qua DOM, xử lý sự kiện của người dùng và lấy dữ liệu từ máy chủ mà không cần tải lại trang. Những kiến thức này là nền tảng để xây dựng các chức năng thường gặp trên website thương mại điện tử như kiểm tra biểu mẫu, tìm kiếm sản phẩm, cập nhật giỏ hàng và hiển thị dữ liệu động.</p>
-      </div>
-    </section>
-
-    <!-- 3.3 DANH SÁCH BÀI LAB -->
-    <section class="section section-alt" id="bai-lab">
-      <div class="wrap">
-        <h2>Ba bài Lab</h2>
-        <div class="lab-grid">
-          <article class="lab-card">
-            <p class="lab-no">Lab 08</p>
-            <h3>JavaScript 1: Language Foundations</h3>
-            <p>Cú pháp, biến, hàm, String, Date, Array, Object và cách dùng Browser Console.</p>
-            <p class="lab-meta">11 Exercise · 8.1 → 8.11 · Đã có mã nguồn</p>
-            <a class="btn btn-primary" href="Lab08/">Xem Lab 08</a>
-          </article>
-          <article class="lab-card">
-            <p class="lab-no">Lab 09</p>
-            <h3>JavaScript 2: DOM and Events</h3>
-            <p>Chọn và thay đổi phần tử HTML, xử lý sự kiện, kiểm tra biểu mẫu và gỡ lỗi sự kiện.</p>
-            <p class="lab-meta">8 Exercise · 9.1 → 9.8 · Chưa bổ sung mã nguồn</p>
-            <a class="btn btn-primary" href="Lab09/">Xem Lab 09</a>
-          </article>
-          <article class="lab-card">
-            <p class="lab-no">Lab 10</p>
-            <h3>JavaScript 3: jQuery</h3>
-            <p>Bộ chọn jQuery, sự kiện, chèn phần tử, hiệu ứng, hoạt ảnh và GET Request.</p>
-            <p class="lab-meta">10 Exercise · 10.1 → 10.10 · Chưa bổ sung mã nguồn</p>
-            <a class="btn btn-primary" href="Lab10/">Xem Lab 10</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3.4 KIẾN THỨC ĐÃ HỌC -->
-    <section class="section" id="kien-thuc">
-      <div class="wrap narrow">
-        <h2>Những gì em học được</h2>
-        <div class="tabs" role="tablist" aria-label="Kiến thức theo từng Lab">
-          <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-08" id="t-08">Lab 08</button>
-          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-09" id="t-09" tabindex="-1">Lab 09</button>
-          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-10" id="t-10" tabindex="-1">Lab 10</button>
-        </div>
-
-        <div class="tab-panel" id="tab-08" role="tabpanel" aria-labelledby="t-08">
-          <ul class="learn-list">
-            <li><strong>Gắn JavaScript vào trang:</strong> em phân biệt được cách viết trực tiếp trong thẻ script và tách ra file .js riêng; cách thứ hai giúp mã gọn và dùng lại được cho nhiều trang.</li>
-            <li><strong>So sánh dữ liệu cẩn thận:</strong> bài 8.6 cho em thấy <code>==</code> và <code>===</code> cho kết quả khác nhau với String object, nên từ nay em luôn dùng <code>===</code>.</li>
-            <li><strong>Mảng và vòng lặp:</strong> em dựng được một bảng lịch 30 ngày chỉ bằng mảng tên ngày và hai vòng lặp, giống cách sinh danh sách sản phẩm từ dữ liệu.</li>
-            <li><strong>Hàm và đối tượng:</strong> hàm có thể được truyền như một tham số, và đối tượng đơn hàng có thể tự tính tổng tiền, rất gần với cách tính tiền trong giỏ hàng.</li>
-            <li><strong>Đọc lỗi trên Console:</strong> khi cố tình viết sai <code>document</code>, trang không báo gì, chỉ Console chỉ ra lỗi. Đây là thói quen em dùng nhiều nhất khi làm đồ án.</li>
-          </ul>
-        </div>
-        <div class="tab-panel" id="tab-09" role="tabpanel" aria-labelledby="t-09" hidden>
-          <ul class="learn-list">
-            <li><strong>Chọn phần tử:</strong> từ getElementById đến querySelectorAll, em có thể lấy đúng phần tử cần thay đổi bằng chính bộ chọn CSS đã quen.</li>
-            <li><strong>Thay đổi trang mà không tải lại:</strong> tạo, thêm và xóa phần tử bằng createElement, appendChild, removeChild thay cho document.write.</li>
-            <li><strong>Xử lý sự kiện:</strong> addEventListener cho click, mouseover, mouseout, kết hợp setTimeout và CSS để có hiệu ứng ẩn hiện mượt.</li>
-            <li><strong>Thời điểm chạy mã:</strong> mã chạy trước khi DOM tải xong sẽ lỗi, nên cần đặt trong sự kiện load.</li>
-            <li><strong>Kiểm tra biểu mẫu:</strong> chặn gửi form khi còn ô trống và hiển thị lỗi ngay trên trang, giống form đăng ký tài khoản hay đặt lịch.</li>
-            <li><strong>Gỡ lỗi:</strong> đặt breakpoint trong tab Sources để xem đối tượng sự kiện thay vì đoán.</li>
-          </ul>
-        </div>
-        <div class="tab-panel" id="tab-10" role="tabpanel" aria-labelledby="t-10" hidden>
-          <ul class="learn-list">
-            <li><strong>Cài đặt jQuery:</strong> tải từ CDN và có bản dự phòng; em cũng học được phải dùng https để chạy trên GitHub Pages.</li>
-            <li><strong>Viết ngắn gọn hơn:</strong> một dòng <code>$('button').css(...)</code> tác động mọi nút mà không cần vòng lặp.</li>
-            <li><strong>Sự kiện và DOM:</strong> on(), off(), chuỗi sự kiện và các hàm chèn phần tử after, append, prependTo.</li>
-            <li><strong>Hiệu ứng:</strong> fade, slide, animate và khung xem ảnh lớn khi rê chuột, phù hợp cho trang chi tiết sản phẩm.</li>
-            <li><strong>Lấy dữ liệu từ máy chủ:</strong> $.get() cùng done(), fail(), always() để hiển thị danh sách, báo lỗi và ẩn biểu tượng đang tải.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3.5 TỰ ĐÁNH GIÁ -->
-    <section class="section section-alt" id="tong-ket">
-      <div class="wrap narrow">
-        <h2>Tự đánh giá sau khi hoàn thành</h2>
-        <div class="summary">
-          <p>Trong phạm vi mã nguồn hiện có, em đã thực hành các kiến thức nền tảng của JavaScript qua Lab 08: cách nhúng JavaScript vào HTML, sử dụng biến, hàm, String, Date, Array và Object, đồng thời làm quen với Browser Console để theo dõi kết quả và phát hiện lỗi. Các kiến thức này giúp em hiểu cách JavaScript bổ sung khả năng tương tác cho website. Lab 09 và Lab 10 sẽ được cập nhật khi có đầy đủ tài liệu và mã nguồn thực hành tương ứng.</p>
-        </div>
-        <div class="apply-grid">
-          <div class="apply"><strong>Biểu mẫu</strong><span>Kiểm tra form đăng ký, đặt lịch trước khi gửi</span></div>
-          <div class="apply"><strong>Giỏ hàng</strong><span>Cập nhật số lượng, tổng tiền ngay trên trang</span></div>
-          <div class="apply"><strong>Sản phẩm</strong><span>Lọc, sắp xếp, hiển thị danh sách từ dữ liệu</span></div>
-          <div class="apply"><strong>Tương tác</strong><span>Hiệu ứng xem ảnh, ẩn hiện, thông báo</span></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">© <span id="year">2026</span> Nguyễn Bảo Hân · UEH · <a href="https://github.com/Lilemm94/ecommerce-ui-improvement/tree/main/JavaScript-Labs" target="_blank" rel="noopener">Mã nguồn trên GitHub</a></div>
-  </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
